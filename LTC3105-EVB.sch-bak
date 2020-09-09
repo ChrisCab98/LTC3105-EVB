@@ -1,0 +1,473 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C2
+U 1 1 5F56266C
+P 4000 2750
+F 0 "C2" H 3885 2704 50  0000 R CNN
+F 1 "10u" H 3885 2795 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4038 2600 50  0001 C CNN
+F 3 "~" H 4000 2750 50  0001 C CNN
+	1    4000 2750
+	1    0    0    1   
+$EndComp
+$Comp
+L CCB_U:LTC3105 U1
+U 1 1 5F570850
+P 4700 3050
+F 0 "U1" H 4700 3765 50  0000 C CNN
+F 1 "LTC3105" H 4700 3674 50  0000 C CNN
+F 2 "Package_SO:MSOP-12_3x4mm_P0.65mm" H 4700 2100 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3105fb.pdf" H 4700 3050 50  0001 C CNN
+	1    4700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2600 4000 2600
+$Comp
+L power:GND #PWR0101
+U 1 1 5F57215F
+P 4000 2900
+F 0 "#PWR0101" H 4000 2650 50  0001 C CNN
+F 1 "GND" H 4005 2727 50  0000 C CNN
+F 2 "" H 4000 2900 50  0001 C CNN
+F 3 "" H 4000 2900 50  0001 C CNN
+	1    4000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F572727
+P 6450 2850
+F 0 "R4" H 6380 2804 50  0000 R CNN
+F 1 "1M" H 6380 2895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6380 2850 50  0001 C CNN
+F 3 "~" H 6450 2850 50  0001 C CNN
+	1    6450 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5F5733FC
+P 6450 3150
+F 0 "R5" H 6380 3104 50  0000 R CNN
+F 1 "419k" H 6380 3195 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6380 3150 50  0001 C CNN
+F 3 "~" H 6450 3150 50  0001 C CNN
+	1    6450 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F57AA8D
+P 2700 3800
+F 0 "R1" H 2630 3754 50  0000 R CNN
+F 1 "55k" H 2630 3845 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2630 3800 50  0001 C CNN
+F 3 "~" H 2700 3800 50  0001 C CNN
+	1    2700 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F57C7D2
+P 2700 4100
+F 0 "C1" H 2585 4054 50  0000 R CNN
+F 1 "10n" H 2585 4145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2738 3950 50  0001 C CNN
+F 3 "~" H 2700 4100 50  0001 C CNN
+	1    2700 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5F57E60B
+P 5250 3700
+F 0 "C3" H 5365 3746 50  0000 L CNN
+F 1 "1u" H 5365 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5288 3550 50  0001 C CNN
+F 3 "~" H 5250 3700 50  0001 C CNN
+	1    5250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F57EABB
+P 5250 3850
+F 0 "#PWR0102" H 5250 3600 50  0001 C CNN
+F 1 "GND" H 5255 3677 50  0000 C CNN
+F 2 "" H 5250 3850 50  0001 C CNN
+F 3 "" H 5250 3850 50  0001 C CNN
+	1    5250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5F57FD3F
+P 4700 2200
+F 0 "L1" V 4890 2200 50  0000 C CNN
+F 1 "6.8u" V 4799 2200 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns_SRN6045TA" H 4700 2200 50  0001 C CNN
+F 3 "~" H 4700 2200 50  0001 C CNN
+	1    4700 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CCB_K:PinHeader2x2 K1
+U 1 1 5F58BFBC
+P 2750 3400
+F 0 "K1" V 2850 3700 50  0000 R CNN
+F 1 "PinHeader2x2" V 2750 4050 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 2750 3175 50  0001 C CNN
+F 3 "" H 2750 3400 50  0001 C CNN
+	1    2750 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F57A44E
+P 2800 3800
+F 0 "R2" H 2730 3754 50  0000 R CNN
+F 1 "55k" H 2730 3845 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2730 3800 50  0001 C CNN
+F 3 "~" H 2800 3800 50  0001 C CNN
+	1    2800 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F5927B4
+P 2750 4250
+F 0 "#PWR0103" H 2750 4000 50  0001 C CNN
+F 1 "GND" H 2755 4077 50  0000 C CNN
+F 2 "" H 2750 4250 50  0001 C CNN
+F 3 "" H 2750 4250 50  0001 C CNN
+	1    2750 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3950 2800 4250
+Wire Wire Line
+	2800 4250 2750 4250
+Connection ~ 2750 4250
+Text Label 4150 3550 2    39   ~ 0
+~SHDN
+$Comp
+L power:GND #PWR0105
+U 1 1 5F5A1E8E
+P 4700 3800
+F 0 "#PWR0105" H 4700 3550 50  0001 C CNN
+F 1 "GND" H 4705 3627 50  0000 C CNN
+F 2 "" H 4700 3800 50  0001 C CNN
+F 3 "" H 4700 3800 50  0001 C CNN
+	1    4700 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2200 5250 2200
+Wire Wire Line
+	5250 2200 5250 2600
+Wire Wire Line
+	4550 2200 4150 2200
+Wire Wire Line
+	4150 2200 4150 2600
+Connection ~ 4150 2600
+$Comp
+L Device:C C4
+U 1 1 5F5A2A0B
+P 5300 2850
+F 0 "C4" H 5415 2896 50  0000 L CNN
+F 1 "33p" H 5415 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5338 2700 50  0001 C CNN
+F 3 "~" H 5300 2850 50  0001 C CNN
+	1    5300 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2700 5250 2700
+Wire Wire Line
+	5300 3000 5250 3000
+Connection ~ 6450 3000
+$Comp
+L power:GND #PWR0106
+U 1 1 5F5A4B72
+P 6450 3300
+F 0 "#PWR0106" H 6450 3050 50  0001 C CNN
+F 1 "GND" H 6455 3127 50  0000 C CNN
+F 2 "" H 6450 3300 50  0001 C CNN
+F 3 "" H 6450 3300 50  0001 C CNN
+	1    6450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5F5A4ECC
+P 5300 3300
+F 0 "C5" H 5415 3346 50  0000 L CNN
+F 1 "33p" H 5415 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5338 3150 50  0001 C CNN
+F 3 "~" H 5300 3300 50  0001 C CNN
+	1    5300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3150 5250 3150
+Wire Wire Line
+	5300 3450 5250 3450
+Wire Wire Line
+	5300 2700 5850 2700
+Connection ~ 5300 2700
+Wire Wire Line
+	5300 3000 6450 3000
+Connection ~ 5300 3000
+$Comp
+L Device:C C6
+U 1 1 5F5A7B51
+P 5700 3300
+F 0 "C6" H 5815 3346 50  0000 L CNN
+F 1 "4.7u" H 5815 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5738 3150 50  0001 C CNN
+F 3 "~" H 5700 3300 50  0001 C CNN
+	1    5700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3150 5300 3150
+Connection ~ 5300 3150
+$Comp
+L power:GND #PWR0107
+U 1 1 5F5A8325
+P 5700 3450
+F 0 "#PWR0107" H 5700 3200 50  0001 C CNN
+F 1 "GND" H 5705 3277 50  0000 C CNN
+F 2 "" H 5700 3450 50  0001 C CNN
+F 3 "" H 5700 3450 50  0001 C CNN
+	1    5700 3450
+	1    0    0    -1  
+$EndComp
+Text Label 5700 3150 0    39   ~ 0
+LDO
+$Comp
+L Device:C C7
+U 1 1 5F5A88D1
+P 6900 2850
+F 0 "C7" H 7015 2896 50  0000 L CNN
+F 1 "1u" H 7015 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6938 2700 50  0001 C CNN
+F 3 "~" H 6900 2850 50  0001 C CNN
+	1    6900 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2700 6450 2700
+Connection ~ 6450 2700
+$Comp
+L power:GND #PWR0108
+U 1 1 5F5A94BC
+P 6900 3000
+F 0 "#PWR0108" H 6900 2750 50  0001 C CNN
+F 1 "GND" H 6905 2827 50  0000 C CNN
+F 2 "" H 6900 3000 50  0001 C CNN
+F 3 "" H 6900 3000 50  0001 C CNN
+	1    6900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3750 4650 3800
+Wire Wire Line
+	4650 3800 4700 3800
+Wire Wire Line
+	4750 3750 4750 3800
+Wire Wire Line
+	4750 3800 4700 3800
+Connection ~ 4700 3800
+$Comp
+L CCB_K:PicoSpox-2p K4
+U 1 1 5F591E9F
+P 2300 2700
+F 0 "K4" H 2218 2375 50  0000 C CNN
+F 1 "PicoSpox-2p" H 2218 2466 50  0000 C CNN
+F 2 "CCB_Connectors:PicoSpox-2p" H 2300 2400 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/2027060243_sd.pdf" H 2300 2700 50  0001 C CNN
+	1    2300 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5F5935B6
+P 2500 2700
+F 0 "#PWR0109" H 2500 2450 50  0001 C CNN
+F 1 "GND" H 2505 2527 50  0000 C CNN
+F 2 "" H 2500 2700 50  0001 C CNN
+F 3 "" H 2500 2700 50  0001 C CNN
+	1    2500 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2600 3100 2600
+Connection ~ 4000 2600
+$Comp
+L CCB_K:PicoSpox-2p K6
+U 1 1 5F59422F
+P 8650 2800
+F 0 "K6" H 8568 2475 50  0000 C CNN
+F 1 "PicoSpox-2p" H 8568 2566 50  0000 C CNN
+F 2 "CCB_Connectors:PicoSpox-2p" H 8650 2500 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/2027060243_sd.pdf" H 8650 2800 50  0001 C CNN
+	1    8650 2800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8450 2700 7550 2700
+Connection ~ 6900 2700
+$Comp
+L power:GND #PWR0110
+U 1 1 5F595911
+P 8450 2800
+F 0 "#PWR0110" H 8450 2550 50  0001 C CNN
+F 1 "GND" H 8455 2627 50  0000 C CNN
+F 2 "" H 8450 2800 50  0001 C CNN
+F 3 "" H 8450 2800 50  0001 C CNN
+	1    8450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F5A0ABA
+P 3250 3350
+F 0 "R3" H 3320 3396 50  0000 L CNN
+F 1 "100k" H 3320 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3180 3350 50  0001 C CNN
+F 3 "~" H 3250 3350 50  0001 C CNN
+	1    3250 3350
+	0    1    1    0   
+$EndComp
+Text Notes 1800 2600 0    39   ~ 0
+Solar Cell
+Text Notes 8800 2700 0    39   ~ 0
+SuperCap
+Text Label 4150 3350 2    39   ~ 0
+PGOOD
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F5A11F6
+P 3100 2600
+F 0 "TP1" H 3158 2718 50  0000 L CNN
+F 1 "TestPoint" H 3150 2650 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3300 2600 50  0001 C CNN
+F 3 "~" H 3300 2600 50  0001 C CNN
+	1    3100 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3100 2600
+Wire Wire Line
+	3100 2600 4000 2600
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F5A173C
+P 5850 2700
+F 0 "TP2" H 5908 2818 50  0000 L CNN
+F 1 "TestPoint" H 5900 2750 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6050 2700 50  0001 C CNN
+F 3 "~" H 6050 2700 50  0001 C CNN
+	1    5850 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 2700
+Wire Wire Line
+	5850 2700 6450 2700
+Text Notes 7650 2450 0    39   ~ 0
+Ampermetrer
+$Comp
+L Connector_Generic:Conn_01x02 K5
+U 1 1 5F596610
+P 7550 2500
+F 0 "K5" V 7514 2580 50  0000 L CNN
+F 1 "Conn_01x02" V 7423 2580 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7550 2500 50  0001 C CNN
+F 3 "~" H 7550 2500 50  0001 C CNN
+	1    7550 2500
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6900 2700 7450 2700
+Text Label 3100 3350 2    39   ~ 0
+LDO
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5F5A0D06
+P 3500 3350
+F 0 "TP3" H 3558 3468 50  0000 L CNN
+F 1 "TestPoint" H 3550 3400 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3700 3350 50  0001 C CNN
+F 3 "~" H 3700 3350 50  0001 C CNN
+	1    3500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CCB_K:PicoSpox-2p K2
+U 1 1 5F5A530B
+P 2000 4050
+F 0 "K2" H 1918 3725 50  0000 C CNN
+F 1 "PicoSpox-2p" H 1918 3816 50  0000 C CNN
+F 2 "CCB_Connectors:PicoSpox-2p" H 2000 3750 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/2027060243_sd.pdf" H 2000 4050 50  0001 C CNN
+	1    2000 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 3950 2200 3950
+Wire Wire Line
+	2200 4050 2200 4250
+Wire Wire Line
+	3400 3350 3500 3350
+Connection ~ 3500 3350
+Wire Wire Line
+	3500 3350 4150 3350
+Wire Wire Line
+	2800 3150 4150 3150
+Wire Wire Line
+	2700 3150 2800 3150
+Connection ~ 2800 3150
+Text Notes 1950 4200 0    39   ~ 0
+DIODE
+Text Label 4000 2600 2    39   ~ 0
+Vin
+Text Label 5300 2700 0    39   ~ 0
+Vout
+Text Label 8450 2700 2    39   ~ 0
+SuperCap+
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5F5BF31C
+P 4500 3800
+F 0 "TP4" H 4558 3918 50  0000 L CNN
+F 1 "TestPoint" H 4550 3850 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4700 3800 50  0001 C CNN
+F 3 "~" H 4700 3800 50  0001 C CNN
+	1    4500 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 3800 4650 3800
+Connection ~ 4650 3800
+Wire Wire Line
+	2200 4250 2700 4250
+Connection ~ 2700 3950
+Connection ~ 2700 4250
+Wire Wire Line
+	2700 4250 2750 4250
+$EndSCHEMATC
